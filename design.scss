@@ -24,7 +24,7 @@ body {
     //     background-color: #49566d;
     display: flex;
     justify-content: space-between;
-    margin: 20px 80px;
+    margin: 20px 40px;
     .logo {
       line-height: 0.1rem;
       h2 {
@@ -66,7 +66,7 @@ body {
       border-top: #178ff5;
       border-style: solid;
       background-color: var(--fifth-color);
-      padding: 70px;
+      padding: 10px;
       width: 255px;
       color: var(--fifth-color);
       flex-shrink: 0;
@@ -80,7 +80,7 @@ body {
         display: flex;
         gap: 20px;
         position: relative;
-        top: -25px;
+     //    top: -25px;
         justify-content: space-between;
         margin-bottom: 50px;
 
@@ -139,7 +139,7 @@ body {
       border-top: #1da1f2;
       border-style: solid;
       background-color: var(--fifth-color);
-      padding: 70px;
+      padding: 10px;
       width: 255px;
       color: var(--fifth-color);
       flex-shrink: 0;
@@ -152,7 +152,7 @@ body {
         display: flex;
         gap: 20px;
         position: relative;
-        top: -25px;
+     //    top: -25px;
         justify-content: space-between;
         margin-bottom: 50px;
         p {
@@ -205,7 +205,7 @@ body {
       border-top: var("#DF4896, #EE877E, #FDC366");
       border-style: solid;
       background-color: var(--fifth-color);
-      padding: 70px;
+      padding: 10px;
       width: 255px;
       color: var(--fifth-color);
       flex-shrink: 0;
@@ -218,7 +218,7 @@ body {
         display: flex;
         gap: 20px;
         position: relative;
-        top: -25px;
+     //    top: -25px;
         justify-content: space-between;
         margin-bottom: 50px;
         p {
@@ -271,7 +271,7 @@ body {
       border-top: #c4032b;
       border-style: solid;
       background-color: var(--fifth-color);
-      padding: 70px;
+      padding: 10px;
       width: 255px;
       color: var(--fifth-color);
       flex-shrink: 0;
@@ -284,7 +284,7 @@ body {
         display: flex;
         gap: 20px;
         position: relative;
-        top: -25px;
+     //    top: -20px;
         justify-content: space-between;
         margin-bottom: 50px;
         p {
@@ -343,7 +343,7 @@ body {
       display: flex;
       justify-content: left;
       color: #fff;
-      margin: 20px 80px;
+      margin: 20px 20px;
       font-family: Inter;
       font-size: 24px;
       font-style: normal;
@@ -359,7 +359,7 @@ body {
 
       //  FACEBOOK1
       .fcset1 {
-        padding: 70px;
+        padding: 20px;
         width: 255px;
         background-color: var(--fifth-color);
 
@@ -367,7 +367,7 @@ body {
           display: flex;
           justify-content: space-between;
           position: relative;
-          top: -20px;
+          // top: -20px;
           span {
             color: var(--fourth-color);
             font-family: Inter;
@@ -421,7 +421,7 @@ body {
 
       //  FACEBOOK2
       .fcset2 {
-        padding: 70px;
+        padding: 20px;
         width: 255px;
         background-color: var(--fifth-color);
 
@@ -429,7 +429,7 @@ body {
           display: flex;
           justify-content: space-between;
           position: relative;
-          top: -20px;
+          // top: -20px;
           span {
             color: var(--fourth-color);
             font-family: Inter;
@@ -483,7 +483,7 @@ body {
 
       //    INSTAGRAM1
       .instaset3 {
-        padding: 70px;
+        padding: 20px;
         width: 255px;
         background-color: var(--fifth-color);
 
@@ -491,7 +491,7 @@ body {
           display: flex;
           justify-content: space-between;
           position: relative;
-          top: -20px;
+          // top: -20px;
           span {
             color: var(--fourth-color);
             font-family: Inter;
@@ -545,7 +545,7 @@ body {
 
       //    INSTAGRAM2
       .instaset4 {
-        padding: 70px;
+        padding: 20px;
         width: 255px;
         background-color: var(--fifth-color);
 
@@ -553,7 +553,7 @@ body {
           display: flex;
           justify-content: space-between;
           position: relative;
-          top: -20px;
+          // top: -20px;
           span {
             color: var(--fourth-color);
             font-family: Inter;
@@ -614,7 +614,7 @@ body {
 
     //  TWITTER1
     .twiset1 {
-      padding: 70px;
+      padding: 20px;
       width: 255px;
       background-color: var(--fifth-color);
 
@@ -622,7 +622,7 @@ body {
         display: flex;
         justify-content: space-between;
         position: relative;
-        top: -20px;
+     //    top: -20px;
         span {
           color: var(--fourth-color);
           font-family: Inter;
@@ -676,7 +676,7 @@ body {
 
     //    TWITTER2
     .twiset2 {
-      padding: 70px;
+      padding: 20px;
       width: 255px;
       background-color: var(--fifth-color);
 
@@ -684,7 +684,7 @@ body {
         display: flex;
         justify-content: space-between;
         position: relative;
-        top: -20px;
+     //    top: -20px;
         span {
           color: var(--fourth-color);
           font-family: Inter;
@@ -738,7 +738,7 @@ body {
 
     //    YOUTUBE
     .youset3 {
-      padding: 70px;
+      padding: 20px;
       width: 255px;
       background-color: var(--fifth-color);
 
@@ -746,7 +746,7 @@ body {
         display: flex;
         justify-content: space-between;
         position: relative;
-        top: -20px;
+     //    top: -20px;
         span {
           color: var(--fourth-color);
           font-family: Inter;
@@ -800,7 +800,7 @@ body {
 
     //    YOUTUBE2
     .youset4 {
-      padding: 70px;
+      padding: 20px;
       width: 255px;
       background-color: var(--fifth-color);
 
@@ -808,7 +808,7 @@ body {
         display: flex;
         justify-content: space-between;
         position: relative;
-        top: -20px;
+     //    top: -20px;
         span {
           color: var(--fourth-color);
           font-family: Inter;
