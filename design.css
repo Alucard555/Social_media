@@ -21,7 +21,7 @@ body {
 .header .cont {
   display: flex;
   justify-content: space-between;
-  margin: 20px 80px;
+  margin: 20px 40px;
 }
 .header .cont .logo {
   line-height: 0.1rem;
@@ -57,7 +57,7 @@ body {
   border-top: #178ff5;
   border-style: solid;
   background-color: var(--fifth-color);
-  padding: 70px;
+  padding: 10px;
   width: 255px;
   color: var(--fifth-color);
   flex-shrink: 0;
@@ -71,7 +71,6 @@ body {
   display: flex;
   gap: 20px;
   position: relative;
-  top: -25px;
   justify-content: space-between;
   margin-bottom: 50px;
 }
@@ -120,7 +119,7 @@ body {
   border-top: #1da1f2;
   border-style: solid;
   background-color: var(--fifth-color);
-  padding: 70px;
+  padding: 10px;
   width: 255px;
   color: var(--fifth-color);
   flex-shrink: 0;
@@ -133,7 +132,6 @@ body {
   display: flex;
   gap: 20px;
   position: relative;
-  top: -25px;
   justify-content: space-between;
   margin-bottom: 50px;
 }
@@ -179,7 +177,7 @@ body {
   border-top: var("#DF4896, #EE877E, #FDC366");
   border-style: solid;
   background-color: var(--fifth-color);
-  padding: 70px;
+  padding: 10px;
   width: 255px;
   color: var(--fifth-color);
   flex-shrink: 0;
@@ -192,7 +190,6 @@ body {
   display: flex;
   gap: 20px;
   position: relative;
-  top: -25px;
   justify-content: space-between;
   margin-bottom: 50px;
 }
@@ -238,7 +235,7 @@ body {
   border-top: #c4032b;
   border-style: solid;
   background-color: var(--fifth-color);
-  padding: 70px;
+  padding: 10px;
   width: 255px;
   color: var(--fifth-color);
   flex-shrink: 0;
@@ -251,7 +248,6 @@ body {
   display: flex;
   gap: 20px;
   position: relative;
-  top: -25px;
   justify-content: space-between;
   margin-bottom: 50px;
 }
@@ -297,7 +293,7 @@ body {
   display: flex;
   justify-content: left;
   color: #fff;
-  margin: 20px 80px;
+  margin: 20px 20px;
   font-family: Inter;
   font-size: 24px;
   font-style: normal;
@@ -311,7 +307,7 @@ body {
   bottom: 30px;
 }
 .main .sec-2 .set1 .fcset1 {
-  padding: 70px;
+  padding: 20px;
   width: 255px;
   background-color: var(--fifth-color);
 }
@@ -319,7 +315,6 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
-  top: -20px;
 }
 .main .sec-2 .set1 .fcset1 .span1 span {
   color: var(--fourth-color);
@@ -366,7 +361,7 @@ body {
   line-height: normal;
 }
 .main .sec-2 .set1 .fcset2 {
-  padding: 70px;
+  padding: 20px;
   width: 255px;
   background-color: var(--fifth-color);
 }
@@ -374,7 +369,6 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
-  top: -20px;
 }
 .main .sec-2 .set1 .fcset2 .span3-1 span {
   color: var(--fourth-color);
@@ -421,7 +415,7 @@ body {
   line-height: normal;
 }
 .main .sec-2 .set1 .instaset3 {
-  padding: 70px;
+  padding: 20px;
   width: 255px;
   background-color: var(--fifth-color);
 }
@@ -429,7 +423,6 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
-  top: -20px;
 }
 .main .sec-2 .set1 .instaset3 .span5-1 span {
   color: var(--fourth-color);
@@ -476,7 +469,7 @@ body {
   line-height: normal;
 }
 .main .sec-2 .set1 .instaset4 {
-  padding: 70px;
+  padding: 20px;
   width: 255px;
   background-color: var(--fifth-color);
 }
@@ -484,7 +477,6 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
-  top: -20px;
 }
 .main .sec-2 .set1 .instaset4 .span7-1 span {
   color: var(--fourth-color);
@@ -535,7 +527,7 @@ body {
   justify-content: space-evenly;
 }
 .main .set2 .twiset1 {
-  padding: 70px;
+  padding: 20px;
   width: 255px;
   background-color: var(--fifth-color);
 }
@@ -543,7 +535,6 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
-  top: -20px;
 }
 .main .set2 .twiset1 .span1 span {
   color: var(--fourth-color);
@@ -590,7 +581,7 @@ body {
   line-height: normal;
 }
 .main .set2 .twiset2 {
-  padding: 70px;
+  padding: 20px;
   width: 255px;
   background-color: var(--fifth-color);
 }
@@ -598,7 +589,6 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
-  top: -20px;
 }
 .main .set2 .twiset2 .span9-1 span {
   color: var(--fourth-color);
@@ -645,7 +635,7 @@ body {
   line-height: normal;
 }
 .main .set2 .youset3 {
-  padding: 70px;
+  padding: 20px;
   width: 255px;
   background-color: var(--fifth-color);
 }
@@ -653,7 +643,6 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
-  top: -20px;
 }
 .main .set2 .youset3 .span10-1 span {
   color: var(--fourth-color);
@@ -700,7 +689,7 @@ body {
   line-height: normal;
 }
 .main .set2 .youset4 {
-  padding: 70px;
+  padding: 20px;
   width: 255px;
   background-color: var(--fifth-color);
 }
@@ -708,7 +697,6 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
-  top: -20px;
 }
 .main .set2 .youset4 .span11-1 span {
   color: var(--fourth-color);
