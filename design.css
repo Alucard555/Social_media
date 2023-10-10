@@ -7,6 +7,7 @@
   --fifth-color: #252b42;
   --sixth-color: #dc414c;
   --seventh-color: #1eb589;
+  --height-color: #F1F3FA;
 }
 
 html,
@@ -14,14 +15,24 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #20222f;
+  background-color: var(--primary-color);
   font-family: "Inter", sans-serif;
+}
+
+.dark-mode {
+  --tertiary-color: #1d1f29;
+  --primary-color: #fff;
+}
+
+.grey-mode {
+  --fifth-color: #F1F3FA;
+  --fourth-color: #252b42;
 }
 
 .header .cont {
   display: flex;
   justify-content: space-between;
-  margin: 20px 40px;
+  padding: 20px 60px;
 }
 .header .cont .logo {
   line-height: 0.1rem;
@@ -33,17 +44,20 @@ body {
 .header .cont .logo p {
   color: var(--fourth-color);
 }
-.header .btn {
+.header .cont .btn {
   display: flex;
   justify-content: space-around;
   gap: 30px;
 }
-.header .btn p {
+.header .cont .btn p {
   color: var(--fourth-color);
 }
-.header .btn svg {
+.header .cont .btn .theme-toggle {
   position: relative;
-  top: 14px;
+  top: -7px;
+  cursor: pointer;
+  background: none;
+  border: none;
 }
 
 .main {
@@ -57,8 +71,8 @@ body {
   border-top: #178ff5;
   border-style: solid;
   background-color: var(--fifth-color);
-  padding: 10px;
   width: 255px;
+  height: 216px;
   color: var(--fifth-color);
   flex-shrink: 0;
   display: flex;
@@ -72,7 +86,7 @@ body {
   gap: 20px;
   position: relative;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin: 10px 0 50px 0;
 }
 .main .sec-1 .box_1 .fcbook p {
   margin: 0 0;
@@ -86,54 +100,52 @@ body {
   line-height: 8px; /* 85.714% */
 }
 .main .sec-1 .box_1 .fctext span {
-  color: #fff;
+  color: var(--tertiary-color);
   font-family: Inter;
-  font-size: 76px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 2px;
 }
 .main .sec-1 .box_1 .fctext p {
-  letter-spacing: 8px;
-  font-size: 22px;
+  letter-spacing: 5px;
+  font-size: 15px;
   color: var(--fourth-color);
 }
 .main .sec-1 .box_1 .fctext2 {
   display: flex;
   gap: 10px;
   position: relative;
-  top: 30px;
+  top: 10px;
 }
 .main .sec-1 .box_1 .fctext2 svg {
   position: relative;
-  top: 27px;
+  top: 15px;
 }
 .main .sec-1 .box_1 .fctext2 p {
-  font-size: 22px;
+  font-size: 15px;
   color: #1eb589;
-}
-.main .sec-1 .box_1 .fctext2 :hover {
-  background-color: var(--sixth-color);
 }
 .main .sec-1 .box_2 {
   border-top: #1da1f2;
   border-style: solid;
   background-color: var(--fifth-color);
-  padding: 10px;
   width: 255px;
+  height: 216px;
   color: var(--fifth-color);
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  cursor: pointer;
 }
 .main .sec-1 .box_2 .twitter {
   display: flex;
   gap: 20px;
   position: relative;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin: 10px 0 50px 0;
 }
 .main .sec-1 .box_2 .twitter p {
   margin: 0 0;
@@ -147,38 +159,38 @@ body {
   line-height: 8px; /* 85.714% */
 }
 .main .sec-1 .box_2 .twitext span {
-  color: #fff;
+  color: var(--tertiary-color);
   font-family: Inter;
-  font-size: 76px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 2px;
 }
 .main .sec-1 .box_2 .twitext p {
-  letter-spacing: 8px;
-  font-size: 22px;
+  letter-spacing: 5px;
+  font-size: 15px;
   color: var(--fourth-color);
 }
 .main .sec-1 .box_2 .twitext2 {
   display: flex;
   gap: 10px;
   position: relative;
-  top: 30px;
+  top: 10px;
 }
 .main .sec-1 .box_2 .twitext2 svg {
   position: relative;
-  top: 27px;
+  top: 15px;
 }
 .main .sec-1 .box_2 .twitext2 p {
-  font-size: 22px;
+  font-size: 15px;
   color: #1eb589;
 }
 .main .sec-1 .box_3 {
-  border-top: var("#DF4896, #EE877E, #FDC366");
+  border-top: #fdc366;
   border-style: solid;
   background-color: var(--fifth-color);
-  padding: 10px;
   width: 255px;
+  height: 216px;
   color: var(--fifth-color);
   flex-shrink: 0;
   display: flex;
@@ -191,7 +203,7 @@ body {
   gap: 20px;
   position: relative;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin: 10px 0 50px 0;
 }
 .main .sec-1 .box_3 .insta p {
   margin: 0 0;
@@ -205,38 +217,38 @@ body {
   line-height: 8px; /* 85.714% */
 }
 .main .sec-1 .box_3 .instatext span {
-  color: #fff;
+  color: var(--tertiary-color);
   font-family: Inter;
-  font-size: 76px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 2px;
 }
 .main .sec-1 .box_3 .instatext p {
-  letter-spacing: 8px;
-  font-size: 22px;
+  letter-spacing: 5px;
+  font-size: 15px;
   color: var(--fourth-color);
 }
 .main .sec-1 .box_3 .instatext2 {
   display: flex;
   gap: 10px;
   position: relative;
-  top: 30px;
+  top: 10px;
 }
 .main .sec-1 .box_3 .instatext2 svg {
   position: relative;
-  top: 27px;
+  top: 15px;
 }
 .main .sec-1 .box_3 .instatext2 p {
-  font-size: 22px;
+  font-size: 15px;
   color: #1eb589;
 }
 .main .sec-1 .box_4 {
   border-top: #c4032b;
   border-style: solid;
   background-color: var(--fifth-color);
-  padding: 10px;
   width: 255px;
+  height: 216px;
   color: var(--fifth-color);
   flex-shrink: 0;
   display: flex;
@@ -249,7 +261,7 @@ body {
   gap: 20px;
   position: relative;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin: 10px 0 50px 0;
 }
 .main .sec-1 .box_4 .youtube p {
   margin: 0 0;
@@ -263,37 +275,37 @@ body {
   line-height: 8px; /* 85.714% */
 }
 .main .sec-1 .box_4 .youtext span {
-  color: #fff;
+  color: var(--tertiary-color);
   font-family: Inter;
-  font-size: 76px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 2px;
 }
 .main .sec-1 .box_4 .youtext p {
-  letter-spacing: 8px;
-  font-size: 22px;
+  letter-spacing: 5px;
+  font-size: 15px;
   color: var(--fourth-color);
 }
 .main .sec-1 .box_4 .youtext2 {
   display: flex;
   gap: 10px;
   position: relative;
-  top: 30px;
+  top: 10px;
 }
 .main .sec-1 .box_4 .youtext2 svg {
   position: relative;
-  top: 27px;
+  top: 15px;
 }
 .main .sec-1 .box_4 .youtext2 p {
-  font-size: 22px;
+  font-size: 15px;
   color: #dc414c;
 }
 .main .sec-2 .header2 {
   display: flex;
   justify-content: left;
-  color: #fff;
-  margin: 20px 20px;
+  color: var(--tertiary-color);
+  margin: 20px 40px;
   font-family: Inter;
   font-size: 24px;
   font-style: normal;
@@ -307,19 +319,21 @@ body {
   bottom: 30px;
 }
 .main .sec-2 .set1 .fcset1 {
-  padding: 20px;
   width: 255px;
+  height: 125px;
   background-color: var(--fifth-color);
 }
 .main .sec-2 .set1 .fcset1 .span1 {
   display: flex;
-  justify-content: space-between;
   position: relative;
+  top: 20px;
+  justify-content: space-around;
+  gap: 100px;
 }
 .main .sec-2 .set1 .fcset1 .span1 span {
   color: var(--fourth-color);
   font-family: Inter;
-  font-size: 20px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -330,14 +344,15 @@ body {
 }
 .main .sec-2 .set1 .fcset1 .span2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 100px;
   position: relative;
-  top: 30px;
+  top: 50px;
 }
 .main .sec-2 .set1 .fcset1 .span2 span {
-  color: #fff;
+  color: var(--tertiary-color);
   font-family: Inter;
-  font-size: 52px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -349,31 +364,33 @@ body {
 }
 .main .sec-2 .set1 .fcset1 .span2 .div2 svg {
   position: relative;
-  top: 25px;
+  top: 12px;
 }
 .main .sec-2 .set1 .fcset1 .span2 .div2 p {
   color: #1eb589;
   text-align: right;
   font-family: Inter;
-  font-size: 22px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 .main .sec-2 .set1 .fcset2 {
-  padding: 20px;
+  height: 125px;
   width: 255px;
   background-color: var(--fifth-color);
 }
 .main .sec-2 .set1 .fcset2 .span3-1 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   position: relative;
+  gap: 100px;
+  top: 20px;
 }
 .main .sec-2 .set1 .fcset2 .span3-1 span {
   color: var(--fourth-color);
   font-family: Inter;
-  font-size: 20px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -384,14 +401,15 @@ body {
 }
 .main .sec-2 .set1 .fcset2 .span4-2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 100px;
   position: relative;
-  top: 30px;
+  top: 50px;
 }
 .main .sec-2 .set1 .fcset2 .span4-2 span {
-  color: #fff;
+  color: var(--tertiary-color);
   font-family: Inter;
-  font-size: 52px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -403,31 +421,33 @@ body {
 }
 .main .sec-2 .set1 .fcset2 .span4-2 .div4-2 svg {
   position: relative;
-  top: 25px;
+  top: 12px;
 }
 .main .sec-2 .set1 .fcset2 .span4-2 .div4-2 p {
   color: #dc414c;
   text-align: right;
   font-family: Inter;
-  font-size: 22px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 .main .sec-2 .set1 .instaset3 {
-  padding: 20px;
+  height: 125px;
   width: 255px;
   background-color: var(--fifth-color);
 }
 .main .sec-2 .set1 .instaset3 .span5-1 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 100px;
   position: relative;
+  top: 20px;
 }
 .main .sec-2 .set1 .instaset3 .span5-1 span {
   color: var(--fourth-color);
   font-family: Inter;
-  font-size: 20px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -438,14 +458,15 @@ body {
 }
 .main .sec-2 .set1 .instaset3 .span6-2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 20px;
   position: relative;
-  top: 30px;
+  top: 50px;
 }
 .main .sec-2 .set1 .instaset3 .span6-2 span {
-  color: #fff;
+  color: var(--tertiary-color);
   font-family: Inter;
-  font-size: 52px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -457,31 +478,33 @@ body {
 }
 .main .sec-2 .set1 .instaset3 .span6-2 .div6-2 svg {
   position: relative;
-  top: 25px;
+  top: 12px;
 }
 .main .sec-2 .set1 .instaset3 .span6-2 .div6-2 p {
   color: #1eb589;
   text-align: right;
   font-family: Inter;
-  font-size: 22px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 .main .sec-2 .set1 .instaset4 {
-  padding: 20px;
+  height: 125px;
   width: 255px;
   background-color: var(--fifth-color);
 }
 .main .sec-2 .set1 .instaset4 .span7-1 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 50px;
   position: relative;
+  top: 20px;
 }
 .main .sec-2 .set1 .instaset4 .span7-1 span {
   color: var(--fourth-color);
   font-family: Inter;
-  font-size: 20px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -492,14 +515,15 @@ body {
 }
 .main .sec-2 .set1 .instaset4 .span8-2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   position: relative;
-  top: 30px;
+  gap: 50px;
+  top: 50px;
 }
 .main .sec-2 .set1 .instaset4 .span8-2 span {
-  color: #fff;
+  color: var(--tertiary-color);
   font-family: Inter;
-  font-size: 52px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -511,13 +535,13 @@ body {
 }
 .main .sec-2 .set1 .instaset4 .span8-2 .div8-2 svg {
   position: relative;
-  top: 25px;
+  top: 12px;
 }
 .main .sec-2 .set1 .instaset4 .span8-2 .div8-2 p {
   color: #1eb589;
   text-align: right;
   font-family: Inter;
-  font-size: 22px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -527,19 +551,21 @@ body {
   justify-content: space-evenly;
 }
 .main .set2 .twiset1 {
-  padding: 20px;
   width: 255px;
+  height: 125px;
   background-color: var(--fifth-color);
 }
 .main .set2 .twiset1 .span1 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 100px;
   position: relative;
+  top: 20px;
 }
 .main .set2 .twiset1 .span1 span {
   color: var(--fourth-color);
   font-family: Inter;
-  font-size: 20px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -550,14 +576,15 @@ body {
 }
 .main .set2 .twiset1 .span2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 100px;
   position: relative;
-  top: 30px;
+  top: 50px;
 }
 .main .set2 .twiset1 .span2 span {
-  color: #fff;
+  color: var(--tertiary-color);
   font-family: Inter;
-  font-size: 52px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -569,31 +596,33 @@ body {
 }
 .main .set2 .twiset1 .span2 .div2 svg {
   position: relative;
-  top: 25px;
+  top: 12px;
 }
 .main .set2 .twiset1 .span2 .div2 p {
   color: #1eb589;
   text-align: right;
   font-family: Inter;
-  font-size: 22px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 .main .set2 .twiset2 {
-  padding: 20px;
   width: 255px;
+  height: 125px;
   background-color: var(--fifth-color);
 }
 .main .set2 .twiset2 .span9-1 {
   display: flex;
-  justify-content: space-between;
   position: relative;
+  top: 20px;
+  justify-content: space-around;
+  gap: 100px;
 }
 .main .set2 .twiset2 .span9-1 span {
   color: var(--fourth-color);
   font-family: Inter;
-  font-size: 20px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -604,14 +633,15 @@ body {
 }
 .main .set2 .twiset2 .span9-2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 100px;
   position: relative;
-  top: 30px;
+  top: 50px;
 }
 .main .set2 .twiset2 .span9-2 span {
-  color: #fff;
+  color: var(--tertiary-color);
   font-family: Inter;
-  font-size: 52px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -623,31 +653,33 @@ body {
 }
 .main .set2 .twiset2 .span9-2 .div2 svg {
   position: relative;
-  top: 25px;
+  top: 12px;
 }
 .main .set2 .twiset2 .span9-2 .div2 p {
   color: #1eb589;
   text-align: right;
   font-family: Inter;
-  font-size: 22px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 .main .set2 .youset3 {
-  padding: 20px;
+  height: 125px;
   width: 255px;
   background-color: var(--fifth-color);
 }
 .main .set2 .youset3 .span10-1 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   position: relative;
+  top: 20px;
+  gap: 100px;
 }
 .main .set2 .youset3 .span10-1 span {
   color: var(--fourth-color);
   font-family: Inter;
-  font-size: 20px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -658,14 +690,15 @@ body {
 }
 .main .set2 .youset3 .span10-2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 100px;
   position: relative;
-  top: 30px;
+  top: 50px;
 }
 .main .set2 .youset3 .span10-2 span {
-  color: #fff;
+  color: var(--tertiary-color);
   font-family: Inter;
-  font-size: 52px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -677,31 +710,33 @@ body {
 }
 .main .set2 .youset3 .span10-2 .div2 svg {
   position: relative;
-  top: 25px;
+  top: 12px;
 }
 .main .set2 .youset3 .span10-2 .div2 p {
   color: var(--sixth-color);
   text-align: right;
   font-family: Inter;
-  font-size: 22px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 .main .set2 .youset4 {
-  padding: 20px;
+  height: 125px;
   width: 255px;
   background-color: var(--fifth-color);
 }
 .main .set2 .youset4 .span11-1 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 100px;
   position: relative;
+  top: 20px;
 }
 .main .set2 .youset4 .span11-1 span {
   color: var(--fourth-color);
   font-family: Inter;
-  font-size: 20px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -712,14 +747,15 @@ body {
 }
 .main .set2 .youset4 .span11-2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 100px;
   position: relative;
-  top: 30px;
+  top: 50px;
 }
 .main .set2 .youset4 .span11-2 span {
-  color: #fff;
+  color: var(--tertiary-color);
   font-family: Inter;
-  font-size: 52px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -731,23 +767,23 @@ body {
 }
 .main .set2 .youset4 .span11-2 .div2 svg {
   position: relative;
-  top: 25px;
+  top: 12px;
 }
 .main .set2 .youset4 .span11-2 .div2 p {
   color: var(--sixth-color);
   text-align: right;
   font-family: Inter;
-  font-size: 22px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  position: relative;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 560px) {
   html,
   body {
-    width: 768px;
-    background-color: red;
+    width: 100%;
   }
   .header .cont {
     flex-direction: column;
@@ -763,7 +799,7 @@ body {
     flex-direction: column;
     gap: 20px;
     position: relative;
-    left: 10px;
+    left: 100px;
   }
   .main .sec-2 .header2 {
     margin: 20px 20px;
@@ -772,12 +808,12 @@ body {
     flex-direction: column;
     gap: 20px;
     position: relative;
-    left: 10px;
+    left: 100px;
   }
   .main .sec-2 .set2 {
     flex-direction: column;
     gap: 20px;
     position: relative;
-    left: 10px;
+    left: 100px;
   }
 }/*# sourceMappingURL=design.css.map */

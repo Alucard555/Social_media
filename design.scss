@@ -8,6 +8,7 @@
   --fifth-color: #252b42;
   --sixth-color: #dc414c;
   --seventh-color: #1eb589;
+  --height-color: #F1F3FA;
 }
 
 html,
@@ -15,16 +16,24 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #20222f;
+  background-color: var(--primary-color);
   font-family: "Inter", sans-serif;
+}
+
+.dark-mode {
+  --tertiary-color: #1d1f29;
+  --primary-color: #fff;
+}
+.grey-mode {
+  --fifth-color: #F1F3FA; 
+  --fourth-color: #252b42;
 }
 
 .header {
   .cont {
-    //     background-color: #49566d;
     display: flex;
     justify-content: space-between;
-    margin: 20px 40px;
+    padding: 20px 60px;
     .logo {
       line-height: 0.1rem;
       h2 {
@@ -35,26 +44,31 @@ body {
         color: var(--fourth-color);
       }
     }
-  }
 
-  .btn {
+    .btn {
     display: flex;
-    // background-color: red;
     justify-content: space-around;
     gap: 30px;
+
     p {
       color: var(--fourth-color);
     }
-    svg {
+    .theme-toggle {
       position: relative;
-      top: 14px;
+      top: -7px;
+      cursor: pointer;
+      background: none;
+      border: none;
     }
   }
+  }
+
+
 }
 
 .main {
   // FIRST-SECTION
- 
+
   padding: 20px;
   .sec-1 {
     // background-color: #178ff5;
@@ -66,8 +80,8 @@ body {
       border-top: #178ff5;
       border-style: solid;
       background-color: var(--fifth-color);
-      padding: 10px;
       width: 255px;
+      height: 216px;
       color: var(--fifth-color);
       flex-shrink: 0;
       display: flex;
@@ -80,9 +94,8 @@ body {
         display: flex;
         gap: 20px;
         position: relative;
-     //    top: -25px;
         justify-content: space-between;
-        margin-bottom: 50px;
+        margin: 10px 0 50px 0;
 
         p {
           margin: 0 0;
@@ -98,17 +111,17 @@ body {
       .fctext {
         line-height: 8px; /* 85.714% */
         span {
-          color: #fff;
+          color: var(--tertiary-color);
           //   text-align: center;
           font-family: Inter;
-          font-size: 76px;
+          font-size: 50px;
           font-style: normal;
           font-weight: 700;
           letter-spacing: 2px;
         }
         p {
-          letter-spacing: 8px;
-          font-size: 22px;
+          letter-spacing: 5px;
+          font-size: 15px;
           color: var(--fourth-color);
         }
       }
@@ -118,43 +131,43 @@ body {
         display: flex;
         gap: 10px;
         position: relative;
-        top: 30px;
+        top: 10px;
         svg {
           position: relative;
-          top: 27px;
+          top: 15px;
         }
         p {
-          font-size: 22px;
+          font-size: 15px;
           color: #1eb589;
         }
-        :hover {
-          background-color: var(--sixth-color);
-        }
       }
+      // :hover {
+      //   background-color: var(--sixth-color);
+      //   transition: 5ms;
+      // }
     }
-
-   
 
     .box_2 {
       border-top: #1da1f2;
       border-style: solid;
       background-color: var(--fifth-color);
-      padding: 10px;
       width: 255px;
+      height: 216px;
       color: var(--fifth-color);
       flex-shrink: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
+      cursor: pointer;
 
       .twitter {
         display: flex;
         gap: 20px;
         position: relative;
-     //    top: -25px;
         justify-content: space-between;
-        margin-bottom: 50px;
+        margin: 10px 0 50px 0;
+
         p {
           margin: 0 0;
           color: #8c98c6;
@@ -169,17 +182,17 @@ body {
       .twitext {
         line-height: 8px; /* 85.714% */
         span {
-          color: #fff;
+          color: var(--tertiary-color);
           //   text-align: center;
           font-family: Inter;
-          font-size: 76px;
+          font-size: 50px;
           font-style: normal;
           font-weight: 700;
           letter-spacing: 2px;
         }
         p {
-          letter-spacing: 8px;
-          font-size: 22px;
+          letter-spacing: 5px;
+          font-size: 15px;
           color: var(--fourth-color);
         }
       }
@@ -189,24 +202,25 @@ body {
         display: flex;
         gap: 10px;
         position: relative;
-        top: 30px;
+        top: 10px;
         svg {
           position: relative;
-          top: 27px;
+          top: 15px;
         }
         p {
-          font-size: 22px;
+          font-size: 15px;
           color: #1eb589;
         }
       }
     }
 
     .box_3 {
-      border-top: var("#DF4896, #EE877E, #FDC366");
+      border-top: #fdc366;
       border-style: solid;
       background-color: var(--fifth-color);
-      padding: 10px;
+      // padding: 10px;
       width: 255px;
+      height: 216px;
       color: var(--fifth-color);
       flex-shrink: 0;
       display: flex;
@@ -218,9 +232,8 @@ body {
         display: flex;
         gap: 20px;
         position: relative;
-     //    top: -25px;
         justify-content: space-between;
-        margin-bottom: 50px;
+        margin: 10px 0 50px 0;
         p {
           margin: 0 0;
           color: #8c98c6;
@@ -228,24 +241,22 @@ body {
           font-size: 15px;
           font-style: normal;
           font-weight: 700;
-          // line-height: normal;
         }
       }
 
       .instatext {
         line-height: 8px; /* 85.714% */
         span {
-          color: #fff;
-          //   text-align: center;
+          color: var(--tertiary-color);
           font-family: Inter;
-          font-size: 76px;
+          font-size: 50px;
           font-style: normal;
           font-weight: 700;
           letter-spacing: 2px;
         }
         p {
-          letter-spacing: 8px;
-          font-size: 22px;
+          letter-spacing: 5px;
+          font-size: 15px;
           color: var(--fourth-color);
         }
       }
@@ -255,13 +266,13 @@ body {
         display: flex;
         gap: 10px;
         position: relative;
-        top: 30px;
+        top: 10px;
         svg {
           position: relative;
-          top: 27px;
+          top: 15px;
         }
         p {
-          font-size: 22px;
+          font-size: 15px;
           color: #1eb589;
         }
       }
@@ -271,8 +282,9 @@ body {
       border-top: #c4032b;
       border-style: solid;
       background-color: var(--fifth-color);
-      padding: 10px;
+      // padding: 10px;
       width: 255px;
+      height: 216px;
       color: var(--fifth-color);
       flex-shrink: 0;
       display: flex;
@@ -284,9 +296,8 @@ body {
         display: flex;
         gap: 20px;
         position: relative;
-     //    top: -20px;
         justify-content: space-between;
-        margin-bottom: 50px;
+        margin: 10px 0 50px 0;
         p {
           margin: 0 0;
           color: #8c98c6;
@@ -294,24 +305,22 @@ body {
           font-size: 15px;
           font-style: normal;
           font-weight: 700;
-          // line-height: normal;
         }
       }
 
       .youtext {
         line-height: 8px; /* 85.714% */
         span {
-          color: #fff;
-          //   text-align: center;
+          color:var(--tertiary-color);
           font-family: Inter;
-          font-size: 76px;
+          font-size: 50px;
           font-style: normal;
           font-weight: 700;
           letter-spacing: 2px;
         }
         p {
-          letter-spacing: 8px;
-          font-size: 22px;
+          letter-spacing: 5px;
+          font-size: 15px;
           color: var(--fourth-color);
         }
       }
@@ -321,13 +330,13 @@ body {
         display: flex;
         gap: 10px;
         position: relative;
-        top: 30px;
+        top: 10px;
         svg {
           position: relative;
-          top: 27px;
+          top: 15px;
         }
         p {
-          font-size: 22px;
+          font-size: 15px;
           color: #dc414c;
         }
       }
@@ -342,8 +351,8 @@ body {
     .header2 {
       display: flex;
       justify-content: left;
-      color: #fff;
-      margin: 20px 20px;
+      color: var(--tertiary-color);
+      margin: 20px 40px;
       font-family: Inter;
       font-size: 24px;
       font-style: normal;
@@ -359,19 +368,20 @@ body {
 
       //  FACEBOOK1
       .fcset1 {
-        padding: 20px;
         width: 255px;
+        height: 125px;
         background-color: var(--fifth-color);
 
         .span1 {
           display: flex;
-          justify-content: space-between;
           position: relative;
-          // top: -20px;
+          top: 20px;
+          justify-content: space-around;
+          gap: 100px;
           span {
             color: var(--fourth-color);
             font-family: Inter;
-            font-size: 20px;
+            font-size: 14px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
@@ -385,13 +395,14 @@ body {
 
         .span2 {
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
+          gap: 100px;
           position: relative;
-          top: 30px;
+          top: 50px;
           span {
-            color: #fff;
+            color: var(--tertiary-color);
             font-family: Inter;
-            font-size: 52px;
+            font-size: 32px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
@@ -403,14 +414,14 @@ body {
             gap: 10px;
             svg {
               position: relative;
-              top: 25px;
+              top: 12px;
             }
 
             p {
               color: #1eb589;
               text-align: right;
               font-family: Inter;
-              font-size: 22px;
+              font-size: 12px;
               font-style: normal;
               font-weight: 700;
               line-height: normal;
@@ -421,19 +432,21 @@ body {
 
       //  FACEBOOK2
       .fcset2 {
-        padding: 20px;
+        // padding: 20px;
+        height: 125px;
         width: 255px;
         background-color: var(--fifth-color);
 
         .span3-1 {
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
           position: relative;
-          // top: -20px;
+          gap: 100px;
+          top: 20px;
           span {
             color: var(--fourth-color);
             font-family: Inter;
-            font-size: 20px;
+            font-size: 14px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
@@ -447,13 +460,14 @@ body {
 
         .span4-2 {
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
+          gap: 100px;
           position: relative;
-          top: 30px;
+          top: 50px;
           span {
-            color: #fff;
+            color: var(--tertiary-color);
             font-family: Inter;
-            font-size: 52px;
+            font-size: 32px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
@@ -465,14 +479,14 @@ body {
             gap: 10px;
             svg {
               position: relative;
-              top: 25px;
+              top: 12px;
             }
 
             p {
               color: #dc414c;
               text-align: right;
               font-family: Inter;
-              font-size: 22px;
+              font-size: 12px;
               font-style: normal;
               font-weight: 700;
               line-height: normal;
@@ -483,19 +497,20 @@ body {
 
       //    INSTAGRAM1
       .instaset3 {
-        padding: 20px;
+        height: 125px;
         width: 255px;
         background-color: var(--fifth-color);
 
         .span5-1 {
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
+          gap: 100px;
           position: relative;
-          // top: -20px;
+          top: 20px;
           span {
             color: var(--fourth-color);
             font-family: Inter;
-            font-size: 20px;
+            font-size: 14px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
@@ -509,13 +524,14 @@ body {
 
         .span6-2 {
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
+          gap: 20px;
           position: relative;
-          top: 30px;
+          top: 50px;
           span {
-            color: #fff;
+            color: var(--tertiary-color);
             font-family: Inter;
-            font-size: 52px;
+            font-size: 32px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
@@ -527,14 +543,14 @@ body {
             gap: 10px;
             svg {
               position: relative;
-              top: 25px;
+              top: 12px;
             }
 
             p {
               color: #1eb589;
               text-align: right;
               font-family: Inter;
-              font-size: 22px;
+              font-size: 12px;
               font-style: normal;
               font-weight: 700;
               line-height: normal;
@@ -545,19 +561,20 @@ body {
 
       //    INSTAGRAM2
       .instaset4 {
-        padding: 20px;
+        height: 125px;
         width: 255px;
         background-color: var(--fifth-color);
 
         .span7-1 {
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
+          gap: 50px;
           position: relative;
-          // top: -20px;
+          top: 20px;
           span {
             color: var(--fourth-color);
             font-family: Inter;
-            font-size: 20px;
+            font-size: 14px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
@@ -571,13 +588,14 @@ body {
 
         .span8-2 {
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
           position: relative;
-          top: 30px;
+          gap: 50px;
+          top: 50px;
           span {
-            color: #fff;
+            color: var(--tertiary-color);
             font-family: Inter;
-            font-size: 52px;
+            font-size: 32px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
@@ -589,14 +607,14 @@ body {
             gap: 10px;
             svg {
               position: relative;
-              top: 25px;
+              top: 12px;
             }
 
             p {
               color: #1eb589;
               text-align: right;
               font-family: Inter;
-              font-size: 22px;
+              font-size: 12px;
               font-style: normal;
               font-weight: 700;
               line-height: normal;
@@ -614,19 +632,20 @@ body {
 
     //  TWITTER1
     .twiset1 {
-      padding: 20px;
       width: 255px;
+      height: 125px;
       background-color: var(--fifth-color);
 
       .span1 {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        gap: 100px;
         position: relative;
-     //    top: -20px;
+        top: 20px;
         span {
           color: var(--fourth-color);
           font-family: Inter;
-          font-size: 20px;
+          font-size: 14px;
           font-style: normal;
           font-weight: 700;
           line-height: normal;
@@ -640,13 +659,14 @@ body {
 
       .span2 {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        gap: 100px;
         position: relative;
-        top: 30px;
+        top: 50px;
         span {
-          color: #fff;
+          color: var(--tertiary-color);
           font-family: Inter;
-          font-size: 52px;
+          font-size: 32px;
           font-style: normal;
           font-weight: 700;
           line-height: normal;
@@ -658,14 +678,14 @@ body {
           gap: 10px;
           svg {
             position: relative;
-            top: 25px;
+            top: 12px;
           }
 
           p {
             color: #1eb589;
             text-align: right;
             font-family: Inter;
-            font-size: 22px;
+            font-size: 12px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
@@ -676,19 +696,20 @@ body {
 
     //    TWITTER2
     .twiset2 {
-      padding: 20px;
       width: 255px;
+      height: 125px;
       background-color: var(--fifth-color);
 
       .span9-1 {
         display: flex;
-        justify-content: space-between;
         position: relative;
-     //    top: -20px;
+        top: 20px;
+        justify-content: space-around;
+        gap: 100px;
         span {
           color: var(--fourth-color);
           font-family: Inter;
-          font-size: 20px;
+          font-size: 14px;
           font-style: normal;
           font-weight: 700;
           line-height: normal;
@@ -702,13 +723,14 @@ body {
 
       .span9-2 {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        gap: 100px;
         position: relative;
-        top: 30px;
+        top: 50px;
         span {
-          color: #fff;
+          color: var(--tertiary-color);
           font-family: Inter;
-          font-size: 52px;
+          font-size: 32px;
           font-style: normal;
           font-weight: 700;
           line-height: normal;
@@ -720,14 +742,14 @@ body {
           gap: 10px;
           svg {
             position: relative;
-            top: 25px;
+            top: 12px;
           }
 
           p {
             color: #1eb589;
             text-align: right;
             font-family: Inter;
-            font-size: 22px;
+            font-size: 12px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
@@ -738,19 +760,20 @@ body {
 
     //    YOUTUBE
     .youset3 {
-      padding: 20px;
+      height: 125px;
       width: 255px;
       background-color: var(--fifth-color);
 
       .span10-1 {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         position: relative;
-     //    top: -20px;
+        top: 20px;
+        gap: 100px;
         span {
           color: var(--fourth-color);
           font-family: Inter;
-          font-size: 20px;
+          font-size: 14px;
           font-style: normal;
           font-weight: 700;
           line-height: normal;
@@ -764,13 +787,14 @@ body {
 
       .span10-2 {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        gap: 100px;
         position: relative;
-        top: 30px;
+        top: 50px;
         span {
-          color: #fff;
+          color: var(--tertiary-color);
           font-family: Inter;
-          font-size: 52px;
+          font-size: 32px;
           font-style: normal;
           font-weight: 700;
           line-height: normal;
@@ -782,14 +806,14 @@ body {
           gap: 10px;
           svg {
             position: relative;
-            top: 25px;
+            top: 12px;
           }
 
           p {
             color: var(--sixth-color);
             text-align: right;
             font-family: Inter;
-            font-size: 22px;
+            font-size: 12px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
@@ -800,19 +824,20 @@ body {
 
     //    YOUTUBE2
     .youset4 {
-      padding: 20px;
+      height: 125px;
       width: 255px;
       background-color: var(--fifth-color);
 
       .span11-1 {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        gap: 100px;
         position: relative;
-     //    top: -20px;
+        top: 20px;
         span {
           color: var(--fourth-color);
           font-family: Inter;
-          font-size: 20px;
+          font-size: 14px;
           font-style: normal;
           font-weight: 700;
           line-height: normal;
@@ -826,13 +851,14 @@ body {
 
       .span11-2 {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        gap: 100px;
         position: relative;
-        top: 30px;
+        top: 50px;
         span {
-          color: #fff;
+          color: var(--tertiary-color);
           font-family: Inter;
-          font-size: 52px;
+          font-size: 32px;
           font-style: normal;
           font-weight: 700;
           line-height: normal;
@@ -844,17 +870,19 @@ body {
           gap: 10px;
           svg {
             position: relative;
-            top: 25px;
+            top: 12px;
           }
 
           p {
             color: var(--sixth-color);
             text-align: right;
             font-family: Inter;
-            font-size: 22px;
+            font-size: 12px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+            position: relative;
+            // top: 5px;
           }
         }
       }
@@ -864,60 +892,55 @@ body {
 
 // MOBILE-VERSION
 
-$background-color_1: red;
+// $background-color_1: red; 
 
-@media screen and (max-width: 840px) {
-	html,
-	body {
-		width: 768px;
-		background-color: $background-color_1; 
-	}
+@media screen and (max-width: 560px) {
+  html,
+  body {
+    width: 100%;
+    // background-color: $background-color_1;
+  }
 
-     .header {
-          .cont {
-               flex-direction: column;
-               margin: 20px 30px;
-          }
+  .header {
+    .cont {
+      flex-direction: column;
+      margin: 20px 30px;
+    }
 
-          .btn {
-               position: relative;
-               top: 20px;
-               gap: 270px;
-               justify-content: left;
-          }
-     }
+    .btn {
+      position: relative;
+      top: 20px;
+      gap: 270px;
+      justify-content: left;
+    }
+  }
 
-	.main {
-		.sec-1 {
-			flex-direction: column;
-               gap: 20px;
-               position: relative;
-               left: 10px;
-		}
+  .main {
+    .sec-1 {
+      flex-direction: column;
+      gap: 20px;
+      position: relative;
+      left: 100px;
+    }
 
-          .sec-2 {
+    .sec-2 {
+      .header2 {
+        margin: 20px 20px;
+      }
 
-               .header2 {
-                    margin: 20px 20px;
-               }
+      .set1 {
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        left: 100px;
+      }
 
-               .set1 {
-                    flex-direction: column;
-                    gap: 20px;
-                    position: relative;
-                    left: 10px;
-               }
-
-               .set2 {
-                    flex-direction: column;
-                    gap: 20px;
-                    position: relative;
-                    left: 10px;
-               }
-          }
-	}
-
-
+      .set2 {
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        left: 100px;
+      }
+    }
+  }
 }
-
-   
