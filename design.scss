@@ -892,9 +892,9 @@ body {
 
 // MOBILE-VERSION
 
-// $background-color_1: red; 
+$background-color_1: red; 
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 375px) {
   html,
   body {
     width: 100%;
@@ -904,14 +904,34 @@ body {
   .header {
     .cont {
       flex-direction: column;
-      margin: 20px 30px;
+      margin: 20px 0;
+      .logo {
+        // background-color: black;
+        width: 120%;
+        position: relative;
+        right: 25px;
+
+        h2 {
+          font-size: 24px;
+        }
+      }
     }
 
     .btn {
+      
       position: relative;
       top: 20px;
-      gap: 270px;
-      justify-content: left;
+      width: 120%;
+      right: 60px;
+
+      .theme-toggle{
+        
+        svg {
+          position: relative;
+          top: 7px;
+          left: 80px;
+        }
+      }
     }
   }
 
@@ -920,27 +940,60 @@ body {
       flex-direction: column;
       gap: 20px;
       position: relative;
-      left: 100px;
+      left: 50px;
     }
 
     .sec-2 {
       .header2 {
-        margin: 20px 20px;
-      }
+        // margin: 20px 20px;
+        font-size: 23px; 
+        width: 310px;
+      // $background-color_1: red; 
 
-      .set1 {
-        flex-direction: column;
-        gap: 20px;
-        position: relative;
-        left: 100px;
-      }
 
-      .set2 {
-        flex-direction: column;
-        gap: 20px;
-        position: relative;
-        left: 100px;
-      }
-    }
-  }
-}
+// @media screen and (max-width: 560px) {
+//   html,
+//   body {
+//     width: 100%;
+//     // background-color: $background-color_1;
+//   }
+
+//   .header {
+//     .cont {
+//       flex-direction: column;
+//       margin: 20px 30px;
+//     }
+
+//     .btn {
+//       position: relative;
+//       top: 20px;
+//       gap: 270px;
+//       justify-content: left;
+//     }
+//   }
+
+//   .main {
+//     .sec-1 {
+//       flex-direction: column;
+//       gap: 20px;
+//       position: relative;
+//       left: 100px;
+//     }
+
+//     .sec-2 {
+//       .header2 {
+//         margin: 20px 20px;
+//       }
+
+//       .set1 {
+//         flex-direction: column;
+//         gap: 20px;
+//         position: relative;
+//         left: 100px;
+//       }
+
+//       .set2 {
+//         flex-direction: column;
+//         gap: 20px;
+//         position: relative;
+//         left: 100px;

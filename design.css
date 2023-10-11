@@ -780,40 +780,56 @@ body {
   position: relative;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 375px) {
   html,
   body {
     width: 100%;
   }
   .header .cont {
     flex-direction: column;
-    margin: 20px 30px;
+    margin: 20px 0;
+  }
+  .header .cont .logo {
+    width: 120%;
+    position: relative;
+    right: 25px;
+  }
+  .header .cont .logo h2 {
+    font-size: 24px;
   }
   .header .btn {
     position: relative;
     top: 20px;
-    gap: 270px;
-    justify-content: left;
+    width: 120%;
+    right: 60px;
+  }
+  .header .btn .theme-toggle svg {
+    position: relative;
+    top: 7px;
+    left: 80px;
   }
   .main .sec-1 {
     flex-direction: column;
     gap: 20px;
     position: relative;
-    left: 100px;
+    left: 50px;
   }
   .main .sec-2 .header2 {
-    margin: 20px 20px;
+    font-size: 23px;
+    width: 310px;
+    position: relative;
+    right: 30px;
   }
   .main .sec-2 .set1 {
     flex-direction: column;
     gap: 20px;
     position: relative;
-    left: 100px;
+    left: 50px;
   }
   .main .sec-2 .set2 {
     flex-direction: column;
     gap: 20px;
     position: relative;
-    left: 100px;
+    left: 50px;
   }
 }/*# sourceMappingURL=design.css.map */
